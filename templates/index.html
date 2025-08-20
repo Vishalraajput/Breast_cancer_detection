@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breast Cancer Stage Detection</title>
+    <!-- Link to the external CSS file -->
+     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Breast Cancer Stage Prediction</h1>
+        <p class="subtitle">Upload a CT scan image to predict its stage (e.g., Benign, Malignant, or Normal).</p>
+        
+        <div class="card">
+            <!-- Image preview area -->
+            <div class="image-preview-area">
+                <img id="image-preview" src="#" alt="Image Preview" class="hidden"/>
+                <span id="preview-text">Image Preview</span>
+            </div>
+
+            <!-- File input for image upload -->
+            <input type="file" id="image-upload" accept="image/*">
+            <label for="image-upload" class="upload-label">Choose Image</label>
+
+            <!-- Predict button -->
+            <button id="predict-btn">Predict</button>
+
+            <!-- Result display area -->
+            <div id="result" class="result-box">
+                <p>The prediction will appear here.</p>
+            </div>
+        </div>
+        
+        <footer class="footer">
+            <p>Final Year Project - AI Breast Cancer Detection</p>
+        </footer>
+    </div>
+
+    <!-- Link to the external JavaScript file -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
