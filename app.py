@@ -9,8 +9,8 @@ from PIL import Image
 import numpy as np
 
 # --- UNIFIED CONFIGURATION ---
-IMAGE_SIZE = (224, 224) # Must match the training script
-MODEL_PATH = 'lung_cancer_model.keras' # Must match the training script
+IMAGE_SIZE = (224, 224) # Must match the training script.
+MODEL_PATH = 'lung_cancer_model.keras' # Must match the training script.
 CLASS_NAMES = ['Benign', 'Malignant']
 # -----------------------------
 
